@@ -1,0 +1,16 @@
+.footer {
+    padding: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navigation__logo {
+    height: 40px;
+} 
