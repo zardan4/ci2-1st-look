@@ -9,14 +9,31 @@
         </button>
 
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse d-md-flex justify-content-between" id="navbarNav">
+            <ul class="navbar-nav ">
                 <li class="nav-item">
                     <!-- todo: "active" class for current page -->
                     <a class="nav-link" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/ask">Ask</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ">
+                <?php
+
+                if ($is_admin) {
+                    echo '<li class="nav-item">
+                        <a class="nav-link" href="/auth">All users</a>
+                    </li>
+                    ';
+                }
+
+                ?>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/auth/logout">Logout</a>
                 </li>
             </ul>
         </div>

@@ -14,3 +14,28 @@
 .navigation__logo {
     height: 40px;
 } 
+
+/* login */
+
+.login__wrapper {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__messages {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 12px 0;
+}
+.login__messages p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+}
