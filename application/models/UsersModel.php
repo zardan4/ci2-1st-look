@@ -3,9 +3,11 @@
 class UsersModel extends CI_Model
 {
 
+    protected $table = 'users';
+
     public function getAllUsers()
     {
-        return $this->db->get('users')->result();
+        return $this->db->get($this->table)->result();
     }
 
 }

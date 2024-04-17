@@ -41,6 +41,8 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
+// pagination routes
+$route['home/(:num)'] = 'home';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

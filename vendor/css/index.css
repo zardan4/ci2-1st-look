@@ -13,7 +13,7 @@
 
 .navigation__logo {
     height: 40px;
-} 
+}
 
 /* login */
 
@@ -33,9 +33,48 @@
     gap: 2px;
     margin: 12px 0;
 }
+
 .login__messages p {
     margin: 0;
     padding: 0;
 
     font-size: 14px;
+}
+
+/* homepage */
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.question {
+    padding-bottom: 16px;
+
+    display: block;
+    text-decoration: none;
+    color: initial;
+
+    transition: all .4s;
+}
+
+.question:hover {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 10px 2px -2px #e9f0e2;
+}
+
+.question__title {
+    font-size: 24px;
+}
+
+.question__descr {
+    margin-top: 8px;
+
+    font-size: 14px;
+}
+
+.question__additional {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 8px;
 }
