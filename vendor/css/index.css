@@ -78,3 +78,40 @@
 
     margin-top: 8px;
 }
+
+/* pagination */
+.pagination {
+    margin: 0 auto;
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.pagination * {
+    border: 2px solid #000;
+    border-radius: 8px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+
+    background: rgba(0, 0, 0, .1);
+
+    transition: all .4s;
+}
+.pagination a {
+    color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+}
+.pagination a:hover {
+    color: var(--bs-nav-link-hover-color);
+
+    background: rgba(0, 0, 0, .15);
+}

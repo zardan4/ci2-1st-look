@@ -26,3 +26,13 @@ CREATE TABLE answers (
     FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
     FOREIGN KEY (question_id) REFERENCES questions (id) ON DELETE CASCADE
 );
+
+CREATE TABLE question_likes (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  
+  	question_id INT NOT NULL,
+  	user_id bigint(20) UNSIGNED NOT NULL,
+  
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+    FOREIGN KEY (question_id) REFERENCES questions (id) ON DELETE CASCADE
+);
